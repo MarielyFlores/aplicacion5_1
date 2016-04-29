@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Quinta Aplicacion </title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temas5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link rel="stylesheet" type="text/css" href="visor/engine1/style.css" />
+	<script type="text/javascript" src="visor/engine1/jquery.js"></script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/nuevas/2.jpg','imagenes/nuevas/6.jpg','imagenes/nuevas/16.jpg','imagenes/nuevas/18.jpg','imagenes/nuevas/24.jpg')">
+
+<div data-role="page" id="principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+     <h1><center> DEL DIA MUNDIAL DE LA TIERRA </center></h1>
+   </div>
+   <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Planeta Tierra </h1>
+       <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('planeta','','imagenes/nuevas/2.jpg',1)"><img src="imagenes/nuevas/1.jpg" width="50%" height="50%" id="planeta"></a></center>
+        </div>
+       </div>
+   
+       
+<div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Fecha en la que se Celebra el Día de la Tierra </h2>
+    <p> clic para mas información </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> ¿Porque se Celebra el Día de la Tierra? </h2>
+    <p> clic para mas información </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Acciones para Evitar la Contaminación de la Tierra </h2>
+    <p> clic para mas informacion </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Cuidados que Devemos Brindarle a la Tierra </h2>
+    <p> clic para mas información </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Cambio Climatico </h2>
+    <p> clic para mas información </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Regla de las 3 R </h2>
+    <p> clic para mas información </p>
+      </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2> Los Cuidados en Mi Comunidad </h2>
+    <p> clic para mas informacion </p>
+      </a>
+    </li>
+    <div data-role="content" align="center">
+     <div>
+  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Reflexión Sobre el Cambio Climatico </h1>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('reflexion','','imagenes/nuevas/24.jpg',1)"><img src="imagenes/nuevas/23.jpg" width="50%" height="50%" id="reflexion"></a>
+<div>
+  <p><h3> Es muy importante cuidar de nuestro planeta por que de el dependemos y sin el no podriamos vivir, practicamente no existiriamos; por que, por cada luz que ahorremos regalamos un respiro a la vida, por cada planta o arbol que cuidemos, ofresemos un aliento a alguien mas, por cada basura que recojamos, regalamos mas vida.  </h3> </p>
+          <br>
+        </div>
+       <div>
+        </div>
+       </div>
+       </div>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+      <img src="imagenes/persona_rosa.png" width="46" height="46">
+   </div>
+   <div>
+     <h4> Aplicacion Cinco </h4>
+     <h4> Mariely Flores Flores </h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1><center> Fecha en la que se Celebra el Día de la Tierra </h1></center>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+ <h3> El Día de la Tierra es un día celebrado en muchos países <b> el 22 de abril. </b></h3> <img src="imagenes/nuevas/3.jpg" width="50%" height="50%"> 
+ <h3> Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra.</h3>
+ <img src="imagenes/nuevas/4.jpg" width="50%" height="50%"> <h3>Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.</h3>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+    <h4>Aplicacion Cinco, MFF</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> ¿Porque se Celebra el Día de la Tierra?  </h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+<h3> De acuerdo con Gaylord Nelson, el término “Día de la Tierra”, era “un nombre obvio y lógico”, sugerido por “ciertas personas”. En otoño de 1969 a Koeing se le ocurrió la idea de declarar un dia especial para el planeta; entre su cumpleaños y el día escogido, el 22 de abril; en inglés, Earth Day (Día de la Tierra) rima con birthday (cumpleaños), la conexión parecía natural.</h3>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('porque','','imagenes/nuevas/6.jpg',1)"><img src="imagenes/nuevas/5.jpg" width="50%" height="50%" id="porque"></a>
+<h3> Otros nombres circularon durante las preparaciones –el mismo Nelson continuó llamándolo National Environment Teach-In (Encuentro Nacional del Medio Ambiente), pero el coordinador nacional, Denis Hayes, usó el término Día de la Tierra en sus comunicados y la cobertura de prensa del evento fue prácticamente unánime en el uso del término Día de la Tierra, así que el nombre se quedó. </h3>
+       </div>
+    </div>
+  <div data-role="footer" data-theme="a">
+    <h4> Aplicacion Cinco, MFF </h4>
+  </div>
+  </div>
+</div>
+
+<div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> Acciones para Evitar la Contaminación de la Tierra </h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+    <img src="imagenes/nuevas/12.jpg" width="50%" height="50%">
+       <h3> **Eviten enterrar desperdicios propios, por que los insectos pueden encontrarlos, comerlos y morir intoxicados.<br> **Evitar enterrar pilas que ya no usemos o tirarlas al pavimento o donde los seres vivos las puedan encontrar y probablemente digerir.<br> 
+       <center><img src="imagenes/nuevas/13.jpg" width="50%" height="50%"></center>**Controlar el uso de fertilizantes y pesticidas que usemos cotidianamente en nuestra casa. <br> **No botar basura en lugares inapropiados.<br> **No quemar ni talar plantas.  </h3>
+       <img src="imagenes/nuevas/14.jpg" width="50%" height="50%">
+       </div>
+    </div>
+  <div data-role="footer" data-theme="a">
+    <h4> Aplicacion Cinco, MFF </h4>
+  </div>
+  </div>
+</div>
+
+<div data-role="page" id="pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> Cuidados que Devemos Brindarle a la Tierra </h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+       <h3> **Utilizar el agua responsablemente.<br> **Inicia un huerto en casa.<br> **Transpórtate en bici.<br> 
+      <center> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('agua','','imagenes/nuevas/16.jpg',1)"><img src="imagenes/nuevas/17.jpg" width="50%" height="50%" id="agua"></a></center> **Desconecta los aparatos eléctricos que no uses. <br> **Separa los residuos sólidos en orgánicos e inorgánicos.<br> **Usa focos ahorradores.  </h3>
+     <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('foco','','imagenes/nuevas/18.jpg',1)"><img src="imagenes/nuevas/15.jpg" width="50%" height="50%" id="foco"></a></center> </div>
+  </div>
+ <div data-role="footer" data-theme="a">
+  <h4> Aplicacion Cinco, MFF </h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> Cambio Climatico </h1>
+    <!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="visor/data1/images/7.jpg" alt="7" title="7" id="wows1_0"/></li>
+<li><img src="visor/data1/images/8.jpg" alt="8" title="8" id="wows1_1"/></li>
+<li><img src="visor/data1/images/9.jpg" alt="9" title="9" id="wows1_2"/></li>
+<li><img src="visor/data1/images/10.jpg" alt="10" title="10" id="wows1_3"/></li>
+<li><img src="visor/data1/images/11.jpg" alt="11" title="11" id="wows1_4"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="7"><img src="visor/data1/tooltips/7.jpg" alt="7"/>1</a>
+<a href="#" title="8"><img src="visor/data1/tooltips/8.jpg" alt="8"/>2</a>
+<a href="#" title="9"><img src="visor/data1/tooltips/9.jpg" alt="9"/>3</a>
+<a href="#" title="10"><img src="visor/data1/tooltips/10.jpg" alt="10"/>4</a>
+<a href="#" title="11"><img src="visor/data1/tooltips/11.jpg" alt="11"/>5</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Responsive Slideshow</a> by WOWSlider.com v4.8</span>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="visor/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="visor/engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+    </div>
+  <div data-role="content" align="center">
+    <div>
+       <h3> El cambio climático es definido como un cambio estable y durable en la distribución de los patrones de clima en periodos de tiempo que van desde décadas hasta millones de años. Pudiera ser un cambio en las condiciones climáticas promedio o la distribución de eventos en torno a ese promedio (por ejemplo más o menos eventos climáticos extremos). El cambio climático puede estar limitado a una región específica, como puede abarcar toda la superficie terrestre. </h3> 
+     </div>
+  </div>
+  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Mas Informacion Sobre el Cambio Climatico </h1>
+         <div>
+         <a href= "http://cambioclimaticoglobal.com/que-es-el-cambio-climatico"> Dar clic aquí para ír a la pagina </a>
+   </div>
+       </div>
+       </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+  <h4> Aplicacion Cinco, MFF </h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="pagina6" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> Regla de las 3 R </h1>
+    </div>
+  <div data-role="content" align="center">
+    <div>
+    <img src="imagenes/nuevas/22.jpg" width="25%" height="25%">
+       <h3> La regla de las tres erres, también conocida como las tres erres de la ecología o simplemente 3R, es una propuesta sobre hábitos de consumo, popularizada por la organización ecologista Greenpeace, que pretende desarrollar hábitos como el consumo responsable.</h3>
+     </div>
+   </div>
+  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Reducir </h1>
+         <center><img src="imagenes/nuevas/19.jpg" width="25%" height="25%"></center>
+         <div>
+         <h3> Si reducimos el problema, disminuimos el impacto en el medio ambiente. Los problemas de concienciación, habría que solucionarlos empezando por esta erre. La reducción puede realizarse en 2 niveles: reducción del consumo de bienes o de energía.  </h3>
+   </div>
+       </div>
+       </div>
+       <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Reutilizar </h1>
+         <center><img src="imagenes/nuevas/20.jpg" width="25%" height="25%"></center>
+         <div>
+         <h3> Segunda erre más importante, igualmente debido a que también reduce impacto en el medio ambiente, indirectamente. Ésta se basa en reutilizar un objeto para darle una segunda vida útil. Todos los materiales o bienes pueden tener más de una vida útil, bien sea reparándolos para un mismo uso o con imaginación para un uso diferente. </h3>
+       </div>
+       </div>   
+   </div>
+   <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1> Reciclar </h1>
+         <center><img src="imagenes/nuevas/21.jpg" width="25%" height="25%"></center>
+         <div>
+         <h3>Ésta es una de las erres más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y bricks, sobre todo), pero no biodegradables. De esta forma se necesita el empleo en mayor forma personal y energía en el proceso.</h3>
+       </div>
+       </div>   
+   </div>
+ <div data-role="footer" data-theme="a">
+  <h4> Aplicacion Cinco, MFF </h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="pagina7" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="b">
+    <h1> Los Cuidados en Mi Comunidad </h1>
+    <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow1.html" style="width:50%;height:20%;max-width:60%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+    </div>
+  <div data-role="content" align="center">
+    <div>
+       <h3>En mi comunidad esta prohibido tirar o dejar la basura en las calles, pero como siempre hay gente que no hace caso y no le importa lo que pase en la comunidad donde vive, esto se da mas en las calles que aun siguen de terraseria ya que, en los terrenos valdios dejan aventada su basura o la queman; sin embargo en las calles que estan adoquinadas casi no se ve la basura puesta o que la esten quemando.</h3>
+     </div>
+  </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+  <h4> Aplicacion Cinco, MFF </h4>
+  </div>
+ </div>
+</div>
+
+</body>
+</html>
